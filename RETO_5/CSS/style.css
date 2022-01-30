@@ -1,0 +1,205 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+:root{
+    --color-primary: #4E5150;
+    --color-secondary:#A9A9A9;
+}
+ .container-main{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+} 
+
+.img-font{
+    margin-top: 20px;
+    background-image: url(../my-gallery-master/profilePhoto.png);
+    width: 150px;
+    height: 150px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 7%;
+}
+.title-profile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.title-profile h1{
+    font-weight: 600;
+    font-style: normal;
+    margin-top: 20px;
+    font-family: 'Montserrat', sans-serif;
+    color:var(--color-primary);
+}
+.title-profile p{
+    font-weight: 600;
+    color: var(--color-secondary);
+     margin-top: 10px;
+     font-style: normal;
+}
+.social-media-cant{
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+}
+.container-social-media{
+    margin: 10px 4px;
+    width: 100px;
+    height: 80px;
+    border-radius: 17%;
+    background-color: #E5E5E5;
+
+}
+.container-social-media h2{
+    text-align: center;
+    margin-top: 20px;
+    color:#4E5150; 
+
+}
+.container-social-media p{
+    margin-top:2px;
+    text-align: center;
+    color:#BDBDBD;
+
+}
+
+#img-uno{
+    width: 400px;
+    height: 400px;
+    background-image: url(../my-gallery-master/photo1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+#img-dos{
+    width: 400px;
+    height: 400px;
+    background-image: url(../my-gallery-master/photo2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+#img-tres{
+    width: 400px;
+    height: 400px;
+    background-image: url(../my-gallery-master/photo3.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+#img-cuatro{
+    width: 400px;
+    height: 400px;
+    background-image: url(../my-gallery-master/photo5.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+}
+#img-cinco{
+    width: 400px;
+    height: 400px;
+    background-image: url(../my-gallery-master/photo6.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+}
+#img-seis{
+    width: 400px;
+    height:400px;
+    background-image: url(../my-gallery-master/photo_4.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 40px;
+}
+.container-img{
+    display: grid;
+    grid-template-columns: repeat(2, 240px);
+    justify-content: center;
+    grid-template-rows: repeat(2, 230px);
+    grid-gap: 180px; /* NOS AYUDA Al espacio entre la grid*/	
+
+}
+.container-img div{
+    border-radius:10px;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer p{
+    color:grey;
+    font-size: 18px;
+    font-family: monospace  , sans-serif;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 600px) {
+    .img-font{
+        width: 110px;
+        height: 110px;
+    }
+    .title-profile h1{
+        font-size: 14px;
+    }
+    .title-profile p{
+        font-size: 12px;
+        line-height: 12px;
+    }
+    .container-social-media{
+        width: 70px;
+        height: 70px;
+    }
+    .container-social-media h2{
+        font-size: 20px;
+    }
+    .container-social-media p{
+        margin-top:2px;
+        text-align: center;
+        color:#BDBDBD;
+    }
+    .container-img{
+        grid-template-columns: repeat(2, 100px);
+        grid-template-rows: repeat(2, 100px);
+        grid-gap: 10px; /* NOS AYUDA Al espacio entre la grid*/	
+    }
+    #img-uno{
+        margin-top:10px;
+        width: 100px;
+        height: 100px;}
+    #img-dos{
+        margin-top:10px;
+        width: 100px;
+        height: 100px;
+    }
+    #img-tres{
+        width: 100px;
+        height: 100px;
+    }
+    #img-cuatro{
+        width: 100px;
+        height: 100px;
+    }
+    #img-cinco{
+        width: 100px;
+        height: 100px;
+    }
+    #img-seis{
+        width: 100px;
+        height: 100px;
+    }
+    footer p{
+        position: absolute;
+    bottom: 0;
+    }
+}

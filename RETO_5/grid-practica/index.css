@@ -1,0 +1,20 @@
+.contenedor{
+    border: 2px solid #BDBDBD;
+    background-color: #f4f9f8;
+    display:grid;
+     grid-template-columns: 200px 140px; /* le decimos a la grilla cuantas columnas y de que tamaño*/
+   /*  grid-template-rows: 100px 130px 110px 200px; lE Deci */
+    grid-auto-rows:200px ; /*le decimos a la grilla cuantas filas y de que tamaño a todas
+    las filas*/
+    grid-auto-columns: 120px;
+    justify-content:center;
+    /*si queremos el mismo espacio entre filas y columas podemos
+    utilizar : 
+    */
+    gap: 20px;
+    
+}
+.contenedor div{
+    border: 1px solid #BDBDBD;
+    background-color: #f4f9f8;
+}
